@@ -1,0 +1,14 @@
+.logo {
+    font-family: "Raleway", "sans-serif";
+    color: var(--accent-color);
+    @include font($fs: 26px, $fw: 400, $lh: 1.19, $ls: 0.03em);
+}
+.logo__header {
+    margin-right: 93px;
+}
+.logo__header__dark {
+    color: #000000;
+}
+.logo__footer--dark {
+    color: var(--btn-color);
+}
