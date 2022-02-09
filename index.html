@@ -102,7 +102,9 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="about">
             <li class="about__item">
-                <img src="./images/img1.jpg" alt="человек печатает на клавиатуре"
+                <img 
+                srcset="./images/desk/about-pic1-desk-1x.jpg 1x, ./images/desk/about-pic1-desk-2x.jpg 2x"
+                src="./images/desk/about-pic1-desk-1x.jpg" alt="человек печатает на клавиатуре"
                 width="370"
                 height="294">
                 <div class="about__box">
@@ -110,7 +112,9 @@
                 </div>
             </li>
             <li class="about__item">
-                <img src="./images/img2.jpg" alt="телефон в руках"
+                <img 
+                srcset="./images/desk/about-pic2-desk-1x.jpg 1x, ./images/desk/about-pic2-desk-2x.jpg 2x"
+                src="./images/desk/about-pic2-desk-1x.jpg" alt="телефон в руках"
                 width="370"
                 height="294">
                 <div class="about__box">
@@ -118,7 +122,9 @@
                 </div>
             </li>
             <li class="about__item">
-                <img src="./images/img3.jpg" alt="планшет в руках"
+                <img 
+                srcset="./images/desk/about-pic3-desk-1x.jpg 1x, ./images/desk/about-pic3-desk-2x.jpg 2x"
+                src="./images/desk/about-pic3-desk-1x.jpg" alt="планшет в руках"
                 width="370"
                 height="294">
                 <div class="about__box">
@@ -128,14 +134,18 @@
         </ul>
     </div>
     </section>
-    <!-- <section class="section section--another-bg">
+    <section class="section section--another-bg">
     <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
             <li class="team__item">
-                <img src="./images/boy1.jpg" alt="парень в очках"
-                width="270"
-                height="260">
+                <picture>
+                    <source srcset="./images/desk/team-pic1-desk-1x.jpg 1x, ./images/desk/team-pic1-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/tab/team-pic1-tab-1x.jpg 1x, ./images/tab/team-pic1-tab-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/mob/team-pic1-mob-1x.jpg 1x, ./images/mob/team-pic1-mob-2x.jpg 2x" media="(min-width: 480px)">
+                    <img src="./images/desk/team-pic1-desk-1x.jpg" alt="парень в очках">
+                </picture>
             <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -177,9 +187,13 @@
             </div>
             </li>
             <li class="team__item">
-                <img src="./images/girl.jpg" alt="девушка"
-                width="270"
-                height="260">
+                <picture>
+                    <source srcset="./images/desk/team-pic2-desk-1x.jpg 1x, ./images/desk/team-pic2-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/tab/team-pic2-tab-1x.jpg 1x, ./images/tab/team-pic2-tab-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/mob/team-pic2-mob-1x.jpg 1x, ./images/mob/team-pic2-mob-2x.jpg 2x" media="(min-width: 480px)">
+                    <img src="./images/desk/team-pic2-desk-1x.jpg" alt="девушка">
+                </picture>
             <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -220,9 +234,13 @@
             </div>
             </li>
             <li class="team__item">
-                <img src="./images/boy2.jpg" alt="парень"
-                width="270"
-                height="260">
+            <picture>
+                <source srcset="./images/desk/team-pic3-desk-1x.jpg 1x, ./images/desk/team-pic3-desk-2x.jpg 2x,"
+                    media="(min-width: 1200px)">
+                <source srcset="./images/tab/team-pic3-tab-1x.jpg 1x, ./images/tab/team-pic3-tab-2x.jpg 2x," media="(min-width: 768px)">
+                <source srcset="./images/mob/team-pic3-mob-1x.jpg 1x, ./images/mob/team-pic3-mob-2x.jpg 2x," media="(min-width: 480px)">
+                <img src="./images/desk/team-pic3-desk-1x.jpg" alt="парень">
+                </picture>
             <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -263,9 +281,12 @@
             </div>
             </li>
             <li class="team__item">
-                <img src="./images/boy3.jpg" alt="парень с бородой"
-                width="270"
-                height="260">
+            <picture>
+                <source srcset="./images/desk/team-pic4-desk-1x.jpg 1x, ./images/desk/team-pic4-desk-2x.jpg 2x" media="(min-width: 1200px)">
+                <source srcset="./images/tab/team-pic4-tab-1x.jpg 1x, ./images/tab/team-pic4-tab-2x.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./images/mob/team-pic4-mob-1x.jpg 1x, ./images/mob/team-pic4-mob-2x.jpg 2x" media="(min-width: 480px)">
+                <img src="./images/desk/team-pic4-desk-1x.jpg" alt="парень с бородой">
+            </picture>
             <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -307,8 +328,8 @@
             </li>
         </ul>
     </div>
-    </section> -->
-    <!-- <section class="section">
+    </section>
+    <section class="section">
         <div class="container">
         <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="clients">
@@ -356,10 +377,11 @@
             </li>
         </ul>
         </div>
-    </section> -->
+    </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
     <div class="footer__container container">
+        <div class="footer__tab">
         <div class="footer__wrap">
         <a class="logo" href="">Web<span class="logo__footer--dark">Studio</span></a>
         <address class="footer__adress">
@@ -377,7 +399,7 @@
             </ul>
         </address>
         </div>
-    <div>
+    <div class="footer__cover">
         <h3 class="footer__title">присоединяйтесь</h3>
     <ul class="footer-socials">
         <li class="footer-socials__item">
@@ -414,6 +436,7 @@
         </li>
     </ul>
     </div>
+    </div>
     <div class="footer__box">
         <h3 class="footer__title">Подпишитесь на рассылку</h3>
     <form class="footer-form">   
@@ -426,8 +449,8 @@
     </form>
     </div>
     </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__btn" data-modal-close type="button">
                 <svg width="11" height="11">
@@ -476,7 +499,7 @@
                 <button class="btn checkbox__btn" type="submit">Отправить</button>
             </form>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js">
     </script>

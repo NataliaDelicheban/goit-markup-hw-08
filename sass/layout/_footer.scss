@@ -4,19 +4,45 @@
     padding-bottom: 60px;
 }
 .footer__container {
-    display: flex;
+    // display: flex;
     align-items: baseline;
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
+}
+.footer__tab {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
 }
 .footer__wrap {
+    text-align: center;
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
     flex-grow: 1;
     margin-right: 70px;
+    }
+    // flex-grow: 1;
+    // margin-right: 70px;
 }
 .adress {
     font-style: normal;
     margin-top: 20px;
 }
 .adress__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;  
+    }
 }
 .adress__link {
     color: var(--btn-color);
@@ -24,6 +50,9 @@
 }
 .adress__link--dark {
     color: rgba(255, 255, 255, 0.6);
+}
+.footer__cover {
+    text-align: center;
 }
 .footer__title {
     margin-bottom: 20px;
@@ -33,6 +62,7 @@
 }
 .footer-socials {
     @include align-list;
+    justify-content: center;
 }
 .footer-socials__item {
     & + & {
@@ -58,15 +88,35 @@
     fill: currentColor;
 }
 .footer__box {
-    margin-left: 93px;
-    display: block;
+    @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        display: block;
+    }
+//     margin-left: 93px;
+// display: block;
 }
 .footer-form {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    // display: flex;
 }
 .footer-form__input {
-    width: 358px;
+    @media screen and (max-width: 767px) {
+    width: 280px;
+    }     
+    width: 450px;
     height: 50px;
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -83,6 +133,8 @@
     }
 }
 .footer-form__btn {
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     outline: none;
 }
