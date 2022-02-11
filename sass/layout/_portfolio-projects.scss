@@ -21,7 +21,9 @@
     }
 }
 .projects__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
@@ -53,16 +55,15 @@
     padding: 63px 24px;
     }
 }
-
 .projects__box {
     border: 1px solid #EEEEEE;
-    padding: 20px 24px;
+    padding: 20px 24px; 
+    flex-grow: 1;
 }
 .projects__title {
     color: var(--title-color);
-    @include font($fs: 18px, $fw: 400, $lh: 2, $ls: 0.06em);
+    @include font($fs: 18px, $fw: 700, $lh: 2, $ls: 0.06em);
 }
-
 .projects__text {  
     color: var(--header-color);
     @include font($fs: 16px, $lh: 1.88);
